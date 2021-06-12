@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noras Company - Form</title>
+    
+    <!-- Main Style -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- WideScreen Style -->
+  <link rel="stylesheet" href="../css/widescreen.css" media="screen and (min-width: 900px)">
+  <!-- Smartphone Style -->
+  <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 700px)">
+  <!-- Main javaScript -->
+  <script src="../script.js"></script>
+</head>
+<body id="form">
+    <!-- Navbar -->
+  <nav  id="navbar" class="bg-dark">
+    <div class="logo">
+      <a href="#form"><img src="../img/noras.png" alt="Car logo"></a>
+    </div>
+
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="makers.html">Makers</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="#form">Buy Car</a></li>
+    </ul>
+</nav>
+
+    <div class="form-index">
+        <form return id="myform" action="index.html" method="post" onsubmit="return validation()">
+
+          <div class="row">
+            <div class="col-25">
+              <label>First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..." required> 
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>E-mail</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="Your Email..." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="password" name="password" placeholder="Your Password..." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Confirm Password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="conpassword" name="conpassword" placeholder="Confirm Your Password..." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Gender</label>
+            </div>
+            <div class="col-75">
+              <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Phone Number</label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Your Phone Number..." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country" required>
+                <option value="australia">Australia</option>
+                <option value="canada">Egypt</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Address</label>
+            </div>
+            <div class="col-75">
+              <textarea id="address" name="address" placeholder="Write your address here.." style="height:100px" required></textarea>
+            </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Comments</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write your comment here.." style="height:160px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit" id="finish-submit">
+          </div>
+        </form>
+      </div>
+
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/f5264f338f.js" crossorigin="anonymous"></script>
+
+      <!-- Footer -->
+      <footer class="text-center py-1 bg-dark">
+        <p>Copyright &copy; 2020, Noeas Company, All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
